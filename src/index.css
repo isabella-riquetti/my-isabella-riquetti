@@ -16,6 +16,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e3dff5;
+}
+
 button, .MuiButtonBase-root.MuiButton-root {
   @apply normal-case rounded-none shadow-none h-12 w-[180px] font-bold border border-solid border-black-950;
 }

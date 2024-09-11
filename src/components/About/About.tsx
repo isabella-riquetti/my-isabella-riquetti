@@ -9,7 +9,7 @@ import juliettaImage from 'src/assets/my-cats/julietta.png';
 
 function About() {
   return (
-    <div className='relative w-full bg-black-900 flex flex-col text-center gap-2 default-spacing pt-12 text-white'>
+    <div className='relative w-full bg-black-900 flex flex-col text-center gap-2 default-spacing pt-12 text-white' id="about-me">
       <span className="text-4xl font-bold mb-2">About Me</span>
       <div className="my-5">
         <p>Hello, my name is Isabella. I'm a Full-Stack developer with over 9 years of experience with several technologies.</p>

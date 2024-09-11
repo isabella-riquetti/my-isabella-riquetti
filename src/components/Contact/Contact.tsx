@@ -8,7 +8,7 @@ function Contact() {
     const [state, handleSubmit] = useForm("mblredja");
 
     return (
-        <div className='relative z-10 bg-purple-200 '>
+        <div className='relative z-10 bg-purple-200' id="contact">
             <div className="absolute top-[140px] left-[-120px] z-20 w-48 h-48 bg-purple-600 rounded-full hidden lg:block"></div>
             <div className='default-spacing grid grid-cols-2 py-24 gap-8'>
                 <div className='flex flex-col gap-6'>

@@ -6,6 +6,13 @@ function Header() {
     window.open("https://riquetti.youcanbook.me/", "_blank");
   }
 
+  const scrollToComponent = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className='w-full h-20 py-2 hidden md:flex gap-4 items-center default-spacing'>
       <div className="flex gap-3 items-center">
@@ -13,9 +20,9 @@ function Header() {
       </div>
       <div className="relative ml-auto flex gap-8 text-lg font-bold">
         <div className="absolute top-[-105px] left-[-105px] z-0 w-36 h-36 bg-purple-600 rounded-full hidden xl:block"></div>
-        <a href="#about-me" className="z-10">About me</a>
-        <a href="#skills" className="z-10">Skills</a>
-        <a href="#projects" className="z-10">Projects</a>
+        <a href="#about-me" className="z-10" onClick={() => scrollToComponent("about-me")}>About me</a>
+        <a href="#skills" className="z-10" onClick={() => scrollToComponent("skills")}>Skills</a>
+        <a href="#projects" className="z-10" onClick={() => scrollToComponent("projects")}>Projects</a>
       </div>
       <Button variant="contained" className="ml-auto bg-black-950 text-white" onClick={openYouCanBookMe}>Book some time</Button>
     </div>

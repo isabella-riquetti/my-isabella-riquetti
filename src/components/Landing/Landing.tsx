@@ -14,7 +14,7 @@ function Landing() {
           Welcome to my page! Any questions, requests, or feedback, please feel free to pick a time for us to talk!
         </div>
         <div className="flex flex-col md:flex-row gap-3 mt-5 landing-buttons">
-          <Button variant="contained" className="bg-black-black-950 text-white" onClick={scrollToContactSection}>Contact me</Button>
+          <Button variant="contained" className="bg-black-950 text-white" onClick={scrollToContactSection}>Contact me</Button>
         </div>
       </div>
       <Vector className="hidden md:block h-3/4" />
