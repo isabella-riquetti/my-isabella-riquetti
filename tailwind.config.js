@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  important: true,
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     colors: {
+      black: "#000",
+      white: "#fff",
+
       'purple': {
         '50': '#f7f6fc',
         '100': '#f0eef9',
@@ -21,7 +25,7 @@ export default {
       },
     },
     fontFamily: {
-        base: '"Montserrat", sans-serif'
+      base: '"Montserrat", sans-serif'
     },
   },
   plugins: [],
