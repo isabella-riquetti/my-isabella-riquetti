@@ -1,3 +1,12 @@
+import aquilesImage from 'src/assets/my-cats/aquiles.png';
+import confeteImage from 'src/assets/my-cats/confete.png';
+import atenaImage from 'src/assets/my-cats/atena.png';
+import luaImage from 'src/assets/my-cats/lua.png';
+import auroraImage from 'src/assets/my-cats/aurora.png';
+import mickeyImage from 'src/assets/my-cats/mickey.png';
+import purpurinaImage from 'src/assets/my-cats/purpurina.png';
+import juliettaImage from 'src/assets/my-cats/julietta.png';
+
 function About() {
   return (
     <div className='relative w-full bg-black-900 flex flex-col text-center gap-2 default-spacing pt-12 text-white'>
@@ -22,15 +31,15 @@ function About() {
         </div>
       </div>
       <div className="w-full grid grid-rows-1 grid-cols-8 md:grid-cols-[auto,auto,auto,auto,160px,auto,auto,auto,auto] justify-center items-end gap-[2%]">
-        <img src="/src/assets/my-cats/aquiles.png" alt="aquiles" className="w-auto h-auto" />
-        <img src="/src/assets/my-cats/confete.png" alt="confete" className="w-auto h-auto" />
-        <img src="/src/assets/my-cats/atena.png" alt="atena" className="w-auto h-auto" />
-        <img src="/src/assets/my-cats/lua.png" alt="lua" className="w-auto h-auto" />
+        <img src={aquilesImage} alt="aquiles" className="w-auto h-auto" />
+        <img src={confeteImage} alt="confete" className="w-auto h-auto" />
+        <img src={atenaImage} alt="atena" className="w-auto h-auto" />
+        <img src={luaImage} alt="lua" className="w-auto h-auto" />
         <div className="hidden md:block w-40 h-20 bg-purple-600 rounded-t-full self-end mb-[-25px]"></div>
-        <img src="/src/assets/my-cats/aurora.png" alt="aurora" className="w-auto h-auto" />
-        <img src="/src/assets/my-cats/mickey.png" alt="mickey" className="w-auto h-auto" />
-        <img src="/src/assets/my-cats/purpurina.png" alt="purpurina" className="w-auto h-auto" />
-        <img src="/src/assets/my-cats/julietta.png" alt="julietta" className="w-auto h-auto" />
+        <img src={auroraImage} alt="aurora" className="w-auto h-auto" />
+        <img src={mickeyImage} alt="mickey" className="w-auto h-auto" />
+        <img src={purpurinaImage} alt="purpurina" className="w-auto h-auto" />
+        <img src={juliettaImage} alt="julietta" className="w-auto h-auto" />
       </div>
     </div>
   )
