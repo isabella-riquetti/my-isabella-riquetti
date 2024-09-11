@@ -32,7 +32,6 @@ function About() {
         <img src="/src/assets/my-cats/purpurina.png" alt="purpurina" className="w-auto h-auto" />
         <img src="/src/assets/my-cats/julietta.png" alt="julietta" className="w-auto h-auto" />
       </div>
-
     </div>
   )
 }
