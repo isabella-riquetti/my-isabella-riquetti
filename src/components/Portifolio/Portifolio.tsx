@@ -14,13 +14,18 @@ function Portifolio() {
                     <p>Explore my projects services, from user interface and experience to prototyping and testing.</p>
                 </div>
                 <div className="flex items-center justify-center h-full">
-                    <div className="w-[250px] text-start flex flex-col gap-2">
+                    <div className="w-[280px] text-start flex flex-col gap-2 shadow-lg">
                         <img src={desktopCreate} alt="desktop view of create new event" />
-                        <div>
+                        <div className="flex flex-col gap-2 p-2">
                             <p className="font-bold my-1">CareMinder</p>
                             <p className="text-sm font-light">Self care reminders app.</p>
+                            <p className="flex gap-1">
+                                <img src="https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB" alt="react" />
+                                <img src="https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white" alt="node.js" />
+                                <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white" alt="Supabase" />
+                            </p>
                         </div>
-                        <div className="flex gap-3 mt-2">
+                        <div className="flex gap-3 mt-2 p-2">
                             <Button className="h-10 bg-black-950 text-white" onClick={() => goTo("https://github.com/isabella-riquetti/careminder")}>Source</Button>
                             <Button className="h-10 text-black-950" onClick={() => goTo("https://careminder.netlify.app/")}>Demo</Button>
                         </div>
