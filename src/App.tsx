@@ -3,6 +3,7 @@ import Contact from './components/Contact/Contact'
 import Header from './components/Header/Header'
 import About from './components/About/About';
 import Landing from './components/Landing/Landing';
+import Portifolio from './components/Portifolio/Portifolio';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Landing />
       <About />
+      <Portifolio />
       <Contact />
     </div>
   )
