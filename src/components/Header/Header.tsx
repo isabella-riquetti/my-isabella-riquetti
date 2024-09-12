@@ -21,8 +21,9 @@ function Header() {
       <div className="relative ml-auto flex gap-8 text-lg font-bold">
         <div className="absolute top-[-105px] left-[-105px] z-0 w-36 h-36 bg-purple-600 rounded-full hidden xl:block"></div>
         <a href="#about-me" className="z-10" onClick={() => scrollToComponent("about-me")}>About me</a>
+        <a href="#projects" className="z-10" onClick={() => scrollToComponent("experiences")}>Experience</a>
+        <a href="#projects" className="z-10" onClick={() => scrollToComponent("portifolio")}>Portifolio</a>
         <a href="#skills" className="z-10" onClick={() => scrollToComponent("skills")}>Skills</a>
-        <a href="#projects" className="z-10" onClick={() => scrollToComponent("projects")}>Projects</a>
       </div>
       <Button variant="contained" className="ml-auto bg-black-950 text-white" onClick={openYouCanBookMe}>Book some time</Button>
     </div>
