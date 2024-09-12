@@ -11,7 +11,7 @@ function Portifolio() {
             <div className="default-spacing py-12" id="portifolio">
                 <span className="text-4xl font-bold mb-2">Portifolio</span>
                 <div className="my-5">
-                    <p>Explore my projects services, from user interface and experience to prototyping and testing.</p>
+                    <p>Explore my projects services, from 0 to release!</p>
                 </div>
                 <div className="flex items-center justify-center h-full">
                     <div className="w-[280px] text-start flex flex-col gap-2 shadow-lg">

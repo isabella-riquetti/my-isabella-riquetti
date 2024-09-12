@@ -1,6 +1,7 @@
-import EmailIcon from '@/assets/email.svg?react';
-import GithubIcon from '@/assets/github.svg?react';
-import InstagramIcon from '@/assets/instagram.svg?react';
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 import { useForm, ValidationError } from '@formspree/react';
 import { Button } from '@mui/material';
 
@@ -14,10 +15,10 @@ function Contact() {
                 <div className='flex flex-col gap-6'>
                     <h1 className='text-2xl font-bold'>Get in Touch</h1>
                     <span>Have a question or a feedback in mind? I'd love to hear from you. Let's chat! I'm also available for mentorship.</span>
-                    <div className='flex gap-2 mt-4'><EmailIcon className='h-5 w-5' /> <a target="_blank" href='emailto:isabella.riquetti@outlook.com'>isabella.riquetti@outlook.com</a></div>
+                    <div className='flex gap-2 mt-4'><EmailIcon /> <a target="_blank" href='emailto:isabella.riquetti@outlook.com'>isabella.riquetti@outlook.com</a></div>
                     <div className='mt-auto flex gap-4'>
-                        <div className='rounded-full bg-white p-2'><a target="_blank" href='https://github.com/isabella-riquetti'><GithubIcon className='h-5 w-5' /></a></div>
-                        <div className='rounded-full bg-white p-2'><a target="_blank" href='https://instagram.com/riquettinha'><InstagramIcon className='h-5 w-5' /></a></div>
+                        <div className='rounded-full bg-white p-2'><a target="_blank" href='https://github.com/isabella-riquetti' className='flex items-center justify-center'><GitHubIcon /></a></div>
+                        <div className='rounded-full bg-white p-2'><a target="_blank" href='https://instagram.com/riquettinha' className='flex items-center justify-center'><InstagramIcon /></a></div>
                     </div>
                 </div>
                 <div>
