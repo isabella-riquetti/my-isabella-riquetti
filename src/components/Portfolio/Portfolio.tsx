@@ -1,21 +1,21 @@
-import desktopCreate from "@/assets/portifolio/desktop-create.png";
-import desktopMonth from "@/assets/portifolio/desktop-month.png";
-import desktopWeek from "@/assets/portifolio/desktop-week.png";
-import desktopDay from "@/assets/portifolio/desktop-day.png";
-import desktopList from "@/assets/portifolio/desktop-list.png";
-import mobileCreate from "@/assets/portifolio/mobile-create.png";
-import mobileMonth from "@/assets/portifolio/mobile-month.png";
-import mobileWeek from "@/assets/portifolio/mobile-week.png";
-import mobileDay from "@/assets/portifolio/mobile-day.png";
-import mobileList from "@/assets/portifolio/mobile-list.png";
+import desktopCreate from "@/assets/portfolio/desktop-create.png";
+import desktopMonth from "@/assets/portfolio/desktop-month.png";
+import desktopWeek from "@/assets/portfolio/desktop-week.png";
+import desktopDay from "@/assets/portfolio/desktop-day.png";
+import desktopList from "@/assets/portfolio/desktop-list.png";
+import mobileCreate from "@/assets/portfolio/mobile-create.png";
+import mobileMonth from "@/assets/portfolio/mobile-month.png";
+import mobileWeek from "@/assets/portfolio/mobile-week.png";
+import mobileDay from "@/assets/portfolio/mobile-day.png";
+import mobileList from "@/assets/portfolio/mobile-list.png";
 import { Button } from "@mui/material";
 import Vitrine from "../Vitrine/Vitrine";
 
-function Portifolio() {
+function Portfolio() {
     return (
         <div className="relative z-10 w-full bg-white text-center" style={{ background: "linear-gradient(0, white 60%, #e3dff5 40%)" }}>
-            <div className="default-spacing py-12" id="portifolio">
-                <span className="text-4xl font-bold mb-2">Portifolio</span>
+            <div className="default-spacing py-12" id="portfolio">
+                <span className="text-4xl font-bold mb-2">Portfolio</span>
                 <div className="my-5">
                     <p>Explore my projects services, from 0 to release!</p>
                 </div>
@@ -47,4 +47,4 @@ function Portifolio() {
     )
 }
 
-export default Portifolio;
+export default Portfolio;

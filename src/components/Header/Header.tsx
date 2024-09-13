@@ -14,7 +14,7 @@ function Header() {
       <div className="relative ml-auto flex gap-8 text-lg font-bold">
         <div className="absolute top-[-105px] left-[-105px] z-0 w-36 h-36 bg-purple-600 rounded-full hidden xl:block"></div>
         <a href="#about-me" className="z-10">About me</a>
-        <a href="#portifolio" className="z-10">Portifolio</a>
+        <a href="#portfolio" className="z-10">Portfolio</a>
         <a href="#skills" className="z-10">Skills</a>
         <a href="#contact" className="z-10">Contact</a>
       </div>
