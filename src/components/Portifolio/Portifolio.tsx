@@ -1,5 +1,15 @@
 import desktopCreate from "@/assets/portifolio/desktop-create.png";
+import desktopMonth from "@/assets/portifolio/desktop-month.png";
+import desktopWeek from "@/assets/portifolio/desktop-week.png";
+import desktopDay from "@/assets/portifolio/desktop-day.png";
+import desktopList from "@/assets/portifolio/desktop-list.png";
+import mobileCreate from "@/assets/portifolio/mobile-create.png";
+import mobileMonth from "@/assets/portifolio/mobile-month.png";
+import mobileWeek from "@/assets/portifolio/mobile-week.png";
+import mobileDay from "@/assets/portifolio/mobile-day.png";
+import mobileList from "@/assets/portifolio/mobile-list.png";
 import { Button } from "@mui/material";
+import Vitrine from "../Vitrine/Vitrine";
 
 function Portifolio() {
     return (
@@ -11,7 +21,7 @@ function Portifolio() {
                 </div>
                 <div className="flex items-center justify-center h-full">
                     <div className="w-[280px] text-start flex flex-col gap-2 shadow-lg">
-                        <img src={desktopCreate} alt="desktop view of create new event" />
+                        <Vitrine images={[desktopCreate,mobileCreate,desktopMonth,mobileMonth,desktopWeek,mobileWeek,desktopDay,mobileDay,desktopList,mobileList]} />
                         <div className="flex flex-col gap-2 p-2">
                             <p className="font-bold my-1">CareMinder</p>
                             <p className="text-sm font-light">Self care reminders app.</p>
