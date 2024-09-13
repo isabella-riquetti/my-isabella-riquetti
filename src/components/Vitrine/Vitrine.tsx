@@ -47,7 +47,7 @@ const Vitrine = ({ images }: { images: string[] }) => {
                 <button onClick={() => move(-1)} disabled={current <= 0} className="p-0 z-30 absolute top-[calc(50%-12px)] left-[-24px] text-black-950 h-fit w-6 border-0 disabled:text-black-400 rounded-full mr-auto">
                     <ChevronLeftIcon className="w-6 h-6" />
                 </button>
-                <div className="w-full h-full relative overflow-hidden cursor-pointer"
+                <div role="button" className="w-full h-full relative overflow-hidden cursor-pointer"
                     onClick={() => setIsExpanded(true)} {...handlers}>
                     <Carousel
                         images={images}
@@ -67,7 +67,7 @@ const Vitrine = ({ images }: { images: string[] }) => {
                 <Button onClick={() => setIsExpanded(false)} className="fixed z-50 top-[20px] right-[20px] text-white h-fit w-fit border-0 rounded-full">
                     <CloseIcon className="h-8 w-8" />
                 </Button>
-                <div className="flex flex-row items-center justify-between" onClick={(e) => handleClick(e)}>
+                <div role="button" className="flex flex-row items-center justify-between" onClick={(e) => handleClick(e)}>
                     <Button onClick={() => move(-1)} disabled={current <= 0} className="z-50 fixed top-[calc(50vh-20px)] left-[20px] text-white h-fit w-fit border-0 disabled:text-black-400 rounded-full">
                         <ChevronLeftIcon className="w-12 h-12" />
                     </Button>

@@ -29,7 +29,7 @@ function About() {
         </div>
         <div className="flex flex-col lg:order-2">
           <span className="text-6xl text-purple-300">8</span>
-          <span className="text-lg"><SouthWestIcon /> Loyals assistants <SouthEastIcon /></span>
+          <span className="text-lg"><SouthWestIcon /> Loyal assistants <SouthEastIcon /></span>
         </div>
       </div>
       <div className="w-full grid grid-rows-1 grid-cols-8 md:grid-cols-[auto,auto,auto,auto,160px,auto,auto,auto,auto] justify-center items-end gap-[2%]">
