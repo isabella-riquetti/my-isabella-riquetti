@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 import CloseIcon from '@mui/icons-material/Close';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
@@ -29,6 +29,18 @@ const Vitrine = ({ images }: { images: string[] }) => {
         trackMouse: true,
     });
 
+    useEffect(() => {
+        if (isExpanded) document.body.style.overflow = 'hidden';
+        else document.body.style.overflow = '';
+
+        return () => { document.body.style.overflow = '' };
+    }, [isExpanded]);
+
+    function handleClick(e: MouseEvent<HTMLDivElement, globalThis.MouseEvent>): void {
+        const target = e.target as HTMLElement;
+        if (target.classList.contains('caroulsel-container')) setIsExpanded(false);
+    }
+
     return (
         <>
             <div className="w-auto h-auto flex bg-white justify-center max-h-[150px]">
@@ -38,7 +50,7 @@ const Vitrine = ({ images }: { images: string[] }) => {
                 <Button onClick={() => setIsExpanded(false)} className="fixed z-50 top-[20px] right-[20px] text-white h-fit w-fit border-0 rounded-full">
                     <CloseIcon className="h-8 w-8" />
                 </Button>
-                <div className="flex flex-row items-center justify-between">
+                <div className="flex flex-row items-center justify-between" onClick={(e) => handleClick(e)}>
                     <Button onClick={() => move(-1)} disabled={current <= 0} className="z-50 fixed top-[calc(50vh-20px)] left-[20px] text-white h-fit w-fit border-0 disabled:text-black-400 rounded-full">
                         <ChevronLeftIcon className="w-12 h-12" />
                     </Button>
@@ -52,7 +64,7 @@ const Vitrine = ({ images }: { images: string[] }) => {
                                 'hidden': ![left, current, right].includes(index),
                             })}
                         >
-                            <div className="w-full h-full flex justify-center items-center">
+                            <div className="w-full h-full flex justify-center items-center caroulsel-container">
                                 <img
                                     src={src}
                                     alt="CareMinder demo"
