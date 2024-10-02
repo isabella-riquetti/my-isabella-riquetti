@@ -16,6 +16,7 @@ function Skills() {
                             <img src="https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB" alt="react" />
                             <img src="https://img.shields.io/badge/-React%20Query-FF4154?style=flat&logo=react%20query&logoColor=white" alt="react-query" />
                             <img src="https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white" alt="react-router" />
+                            <img src="https://img.shields.io/badge/Vite-bd34fe?style=flat&logo=vite&logoColor=ffd731" alt="vite" />
                             <img src="https://img.shields.io/badge/angular-%23DD0031.svg?style=flat&logo=angular&logoColor=white" alt="angular" />
                             <img src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=flat&logo=vuedotjs&logoColor=%234FC08D" alt="vue.js" />
                             <img src="https://img.shields.io/badge/blazor-%235C2D91.svg?style=flat&logo=blazor&logoColor=white" alt="blazor" />
