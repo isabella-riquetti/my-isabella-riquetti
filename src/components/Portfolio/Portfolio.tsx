@@ -98,13 +98,10 @@ function Portfolio() {
                                 <img src="https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white" alt="node.js" />
                                 <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white" alt="Supabase" />
                             </p>
-                            <p className="text-sm">
-                                📖 <a href={documentation} target="_blank" className="underline">Documentation</a>
-                            </p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-3 mt-auto p-2">
-                            <div><a href="https://github.com/isabella-riquetti/habity-care" target="_blank"><Button className="w-full h-10 bg-black-950 text-white">Source</Button></a></div>
-                            <div><a href="#" target="_blank"><Button className="w-full h-10 text-black-950">Demo</Button></a></div>
+                            <div><a href="https://habity.care/help" target="_blank"><Button className="w-full h-10 bg-black-950 text-white">Docs</Button></a></div>
+                            <div><a href="https://habity.care/#" target="_blank"><Button className="w-full h-10 text-black-950">Web App</Button></a></div>
                         </div>
                     </div>
                     <div className="w-[280px] text-start flex flex-col gap-2 shadow-lg h-[430px]">
@@ -139,8 +136,8 @@ function Portfolio() {
                             </p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-3 mt-auto p-2">
-                            <div><a href="https://github.com/isabella-riquetti/comifer" target="_blank"><Button className="w-full h-10 bg-black-950 text-white">Source</Button></a></div>
-                            <div><a href="#" target="_blank"><Button className="w-full h-10 text-black-950">Demo</Button></a></div>
+                            <div><a href="https://github.com/isabella-riquetti/asstec" target="_blank"><Button className="w-full h-10 bg-black-950 text-white">Source</Button></a></div>
+                            <div><a href="https://comifer.com.br/" target="_blank"><Button className="w-full h-10 text-black-950">Demo</Button></a></div>
                         </div>
                     </div>
                     <div className="w-[280px] text-start flex flex-col gap-2 shadow-lg h-[430px]">
