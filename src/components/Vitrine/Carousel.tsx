@@ -1,4 +1,7 @@
 import classNames from "classnames";
+import { useEffect, useRef } from "react";
+
+const isVideo = (src: string) => /\.(mp4|webm|ogg)(\?|$)/i.test(src);
 
 interface CarouselProps {
     left: number;
@@ -9,6 +12,20 @@ interface CarouselProps {
     limitSize: boolean;
 }
 const Carousel = ({ left, right, current, images, containerWidth, limitSize }: CarouselProps) => {
+    const videoRefs = useRef<Record<number, HTMLVideoElement | null>>({});
+
+    useEffect(() => {
+        Object.entries(videoRefs.current).forEach(([index, video]) => {
+            if (!video) return;
+            if (Number(index) === current) {
+                video.currentTime = 0;
+                video.play().catch(() => { /* autoplay may be blocked until interaction */ });
+            } else {
+                video.pause();
+            }
+        });
+    }, [current, images]);
+
     return (
         images.map((src, index) => (
             <div
@@ -27,14 +44,30 @@ const Carousel = ({ left, right, current, images, containerWidth, limitSize }: C
                 }}
             >
                 <div className="w-full h-full flex justify-center items-center caroulsel-container">
-                    <img
-                        src={src}
-                        alt="CareMinder demo"
-                        className={classNames({
-                            "max-w-[80%] max-h-[80%]": limitSize,
-                            "object-cover": !limitSize
-                        })}
-                    />
+                    {isVideo(src) ? (
+                        <video
+                            ref={(el) => { videoRefs.current[index] = el; }}
+                            src={src}
+                            className={classNames({
+                                "max-w-[80%] max-h-[80%]": limitSize,
+                                "object-cover object-top w-full h-full": !limitSize
+                            })}
+                            muted
+                            loop
+                            playsInline
+                            autoPlay
+                            controls={limitSize}
+                        />
+                    ) : (
+                        <img
+                            src={src}
+                            alt="Project demo"
+                            className={classNames({
+                                "max-w-[80%] max-h-[80%]": limitSize,
+                                "object-cover": !limitSize
+                            })}
+                        />
+                    )}
                 </div>
             </div>
         ))
