@@ -68,6 +68,7 @@ function Portfolio() {
                             onboarding,
                             routineDashboard,
                             budgetDashboard,
+                            documentation,
                             scheduleCalendarViews,
                             scheduleCreate,
                             resourcesCreate,
