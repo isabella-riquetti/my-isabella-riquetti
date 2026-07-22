@@ -138,7 +138,7 @@ function Portfolio() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-3 mt-auto p-2">
                             <div><a href="https://github.com/isabella-riquetti/asstec" target="_blank"><Button className="w-full h-10 bg-black-950 text-white">Source</Button></a></div>
-                            <div><a href="https://comifer.com.br/" target="_blank"><Button className="w-full h-10 text-black-950">Demo</Button></a></div>
+                            <div><a href="https://comifer.com.br/" target="_blank"><Button className="w-full h-10 text-black-950">Site</Button></a></div>
                         </div>
                     </div>
                     <div className="w-[280px] text-start flex flex-col gap-2 shadow-lg h-[430px]">
