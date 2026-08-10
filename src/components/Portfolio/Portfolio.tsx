@@ -151,15 +151,11 @@ function Portfolio() {
                                 <img src="https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white" alt="node.js" />
                                 <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white" alt="Supabase" />
                             </p>
-                            <p className="text-sm">
-                                <strong>User:</strong> <span>demo-user</span><br />
-                                <strong>Password:</strong> <span>Dem0Pas$word</span>
-                            </p>
-                            <p className="text-xs">User limited to 5 reminder inclusions every 10 minutes.</p>
+                            <p className="text-xs ">Service disabled.</p>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-3 mt-auto p-2">
                             <div><a href="https://github.com/isabella-riquetti/careminder" target="_blank"><Button className="w-full h-10 bg-black-950 text-white">Source</Button></a></div>
-                            <div><a href="https://careminder.netlify.app/" target="_blank"><Button className="w-full h-10 text-black-950">Demo</Button></a></div>
+                            <div><a href="https://careminder.netlify.app/" target="_blank"><Button className="w-full h-10 text-black-950" disabled>Demo</Button></a></div>
                         </div>
                     </div>
                 </div>
