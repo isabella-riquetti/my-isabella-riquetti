@@ -15,7 +15,7 @@ function Contact() {
                 <div className='flex flex-col gap-6'>
                     <h1 className='text-2xl font-bold'>Get in Touch</h1>
                     <span>Have a question or a feedback in mind? I'd love to hear from you. Let's chat! I'm also available for mentorship.</span>
-                    <div className='flex gap-2 mt-4'><EmailIcon /> <a target="_blank" href='emailto:isabella.riquetti@outlook.com'>isabella.riquetti@outlook.com</a></div>
+                    <div className='flex gap-2 mt-4'><EmailIcon /> <a target="_blank" href='mailto:isabella.riquetti@outlook.com'>isabella.riquetti@outlook.com</a></div>
                     <div className='mt-auto flex gap-4'>
                         <div className='rounded-full bg-white p-2'><a target="_blank" href='https://github.com/isabella-riquetti' className='flex items-center justify-center'><GitHubIcon /></a></div>
                         <div className='rounded-full bg-white p-2'><a target="_blank" href='https://instagram.com/riquettinha' className='flex items-center justify-center'><InstagramIcon /></a></div>
