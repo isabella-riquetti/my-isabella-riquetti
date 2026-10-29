@@ -1,5 +1,9 @@
 # React + TypeScript + Vite
 
+## Analytics
+
+Visits are counted with PostHog (EU) from production builds only, with nothing stored on the device (`src/lib/analytics.ts`). The public project key lives in `.env.production` as `VITE_POSTHOG_KEY`; leave it unset locally and nothing is sent.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
