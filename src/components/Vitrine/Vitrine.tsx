@@ -1,4 +1,5 @@
 import { MouseEvent, useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import CloseIcon from '@mui/icons-material/Close';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
@@ -6,9 +7,11 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { Button } from "@mui/material";
 import { useSwipeable } from "react-swipeable";
 import Carousel from "./Carousel";
+import { useHoldCarousel } from "../Portfolio/carouselHold";
 
 const Vitrine = ({ images }: { images: string[] }) => {
     const [isExpanded, setIsExpanded] = useState(false);
+    useHoldCarousel(isExpanded);
 
     const [left, setLeft] = useState<number>(-1);
     const [current, setCurrent] = useState<number>(0);
@@ -63,7 +66,7 @@ const Vitrine = ({ images }: { images: string[] }) => {
                     <ChevronRightIcon className="w-6 h-6" />
                 </button>
             </div>
-            {isExpanded && <div className="fixed inset-0 z-40 flex items-center justify-center bg-black-950 bg-opacity-80" {...handlers}>
+            {isExpanded && createPortal(<div className="fixed inset-0 z-40 flex items-center justify-center bg-black-950 bg-opacity-80" {...handlers}>
                 <Button onClick={() => setIsExpanded(false)} className="fixed z-50 top-[20px] right-[20px] text-white h-fit w-fit border-0 rounded-full">
                     <CloseIcon className="h-8 w-8" />
                 </Button>
@@ -83,7 +86,7 @@ const Vitrine = ({ images }: { images: string[] }) => {
                         <ChevronRightIcon className="w-12 h-12" />
                     </Button>
                 </div>
-            </div>}
+            </div>, document.body)}
         </>
     );
 };
