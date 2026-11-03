@@ -1,9 +1,15 @@
-import mainPage from "@/assets/portfolio/comifer/comifer-main-page.png";
-import autorizadas from "@/assets/portfolio/comifer/comifer-autorizadas.png";
-import contactUs from "@/assets/portfolio/comifer/comifer-contact-us.png";
+import comiferHero from "@/assets/portfolio/comifer/hero.jpg";
+import comiferServicos from "@/assets/portfolio/comifer/servicos.jpg";
+import comiferOrcamento from "@/assets/portfolio/comifer/orcamento.jpg";
+import comiferMarcas from "@/assets/portfolio/comifer/marcas.jpg";
+import comiferSobre from "@/assets/portfolio/comifer/sobre.jpg";
+import comiferMobileHero from "@/assets/portfolio/comifer/mobile-hero.jpg";
 
 export {
-    mainPage,
-    autorizadas,
-    contactUs
+    comiferHero,
+    comiferServicos,
+    comiferOrcamento,
+    comiferMarcas,
+    comiferSobre,
+    comiferMobileHero
 }

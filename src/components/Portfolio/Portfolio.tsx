@@ -21,9 +21,12 @@ import {
     mobileMainAuthenticated
 } from "@/assets/portfolio/moodl";
 import {
-    mainPage,
-    autorizadas,
-    contactUs
+    comiferHero,
+    comiferServicos,
+    comiferOrcamento,
+    comiferMarcas,
+    comiferSobre,
+    comiferMobileHero
 } from "@/assets/portfolio/comifer";
 import {
     habity01,
@@ -57,13 +60,7 @@ import {
 } from "@/assets/portfolio/vetvitae";
 import {
     desktopHero,
-    desktopProdutos,
-    desktopServicos,
-    desktopComo,
-    desktopEmpresa,
-    desktopContato,
-    mobileHero,
-    mobileServicos
+    desktopEmpresa
 } from "@/assets/portfolio/riquetti-studio";
 import { Button } from "@mui/material";
 import Vitrine from "../Vitrine/Vitrine";
@@ -135,7 +132,7 @@ const projects: Project[] = [
     {
         name: "Riquetti Studio",
         description: "My app building studio: websites and apps designed and built from scratch.",
-        media: [desktopHero, desktopProdutos, desktopServicos, desktopComo, desktopEmpresa, desktopContato, mobileHero, mobileServicos],
+        media: [desktopHero, desktopEmpresa],
         badges: [badges.vite, badges.react, badges.tailwind],
         links: [
             { label: "Site", href: "https://riquetti.com.br" },
@@ -145,7 +142,7 @@ const projects: Project[] = [
     {
         name: "Comifer",
         description: "Institutional company website.",
-        media: [mainPage, autorizadas, contactUs],
+        media: [comiferHero, comiferServicos, comiferOrcamento, comiferMarcas, comiferSobre, comiferMobileHero],
         badges: [badges.html5, badges.css3, badges.javascript],
         links: [
             { label: "Source", href: "https://github.com/isabella-riquetti/asstec" },
