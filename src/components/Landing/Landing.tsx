@@ -5,7 +5,7 @@ function Landing() {
   return (
     <div className='w-full grid grid-cols-1 md:grid-cols-[40%,60%] max-h-screen h-[700px] items-center justify-items-center default-spacing'>
       <div className="flex flex-col gap-2">
-        <span data-rise className="text-2xl mb-5">Full-Stack Developer</span>
+        <span data-rise className="text-2xl mb-5">Full Stack Engineer</span>
         <div data-rise className="text-5xl"><strong>Hi There</strong>, I'm</div>
         <span data-rise className="text-5xl text-purple-700">Isabella Riquetti</span>
         <div data-rise className="my-5">
