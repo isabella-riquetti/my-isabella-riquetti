@@ -8,31 +8,32 @@ import purpurinaImage from 'src/assets/my-cats/purpurina.png';
 import juliettaImage from 'src/assets/my-cats/julietta.png';
 import SouthEastIcon from '@mui/icons-material/SouthEast';
 import SouthWestIcon from '@mui/icons-material/SouthWest';
+import CountUp from './CountUp';
 
 function About() {
   return (
     <div className='relative w-full bg-black-900 flex flex-col text-center gap-2 default-spacing pt-12 text-white' id="about-me">
-      <span className="text-4xl font-bold mb-2">About Me</span>
-      <div className="my-5">
+      <span data-rise className="text-4xl font-bold mb-2">About Me</span>
+      <div data-rise className="my-5">
         <p>Hello, my name is Isabella. I'm a Full-Stack developer with over 11 years of experience with several technologies.</p>
         <p>Since I started, I have worked on projects of all different scales, from newly founded startups to recently consolidated companies and multinationals.</p>
         <p>Most of my experience has been with B2B software, and I am adept at handling projects to ensure they are beautiful, fast, and secure.</p>
       </div>
       <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-3 md:grid-rows-1 mb-16 text-center font-bold gap-8 md:gap-2">
-        <div className="flex flex-col lg:order-1">
-          <span className="text-6xl text-purple-300">+11</span>
+        <div data-rise className="flex flex-col lg:order-1">
+          <CountUp value={11} prefix="+" className="text-6xl text-purple-300" />
           <span className="text-lg">Years Developing</span>
         </div>
-        <div className="flex flex-col lg:order-3">
-          <span className="text-6xl text-purple-300">+10</span>
+        <div data-rise className="flex flex-col lg:order-3">
+          <CountUp value={10} prefix="+" className="text-6xl text-purple-300" />
           <span className="text-lg">Projects</span>
         </div>
-        <div className="flex flex-col lg:order-2">
-          <span className="text-6xl text-purple-300">9</span>
+        <div data-rise className="flex flex-col lg:order-2">
+          <CountUp value={9} className="text-6xl text-purple-300" />
           <span className="text-lg"><SouthWestIcon /> Loyal cat-assistants <SouthEastIcon /></span>
         </div>
       </div>
-      <div className="w-full grid grid-rows-1 grid-cols-8 md:grid-cols-[auto,auto,auto,auto,160px,auto,auto,auto,auto] justify-center items-end gap-[2%]">
+      <div data-rise className="w-full grid grid-rows-1 grid-cols-8 md:grid-cols-[auto,auto,auto,auto,160px,auto,auto,auto,auto] justify-center items-end gap-[2%]">
         <img src={aquilesImage} alt="aquiles" className="w-auto h-auto" />
         <img src={confeteImage} alt="confete" className="w-auto h-auto" />
         <img src={atenaImage} alt="atena" className="w-auto h-auto" />

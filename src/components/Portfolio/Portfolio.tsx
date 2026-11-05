@@ -212,15 +212,17 @@ function Portfolio() {
         <div className="relative z-10 w-full bg-white text-center" style={{ background: "linear-gradient(0, white 60%, #e3dff5 40%)" }}>
             <div className="py-12" id="portfolio">
                 <div className="default-spacing">
-                    <span className="text-4xl font-bold mb-2">Portfolio</span>
-                    <div className="my-5">
+                    <span data-rise className="inline-block text-4xl font-bold mb-2">Portfolio</span>
+                    <div data-rise className="my-5">
                         <p>Explore my projects services, from 0 to release!</p>
                     </div>
                 </div>
-                <ProjectCarousel
-                    label="Projects"
-                    items={projects.map(project => <ProjectCard key={project.name} project={project} />)}
-                />
+                <div data-rise>
+                    <ProjectCarousel
+                        label="Projects"
+                        items={projects.map(project => <ProjectCard key={project.name} project={project} />)}
+                    />
+                </div>
             </div>
         </div>
     )

@@ -3,10 +3,10 @@ function Skills() {
     return (
         <div className="z-10 w-full bg-white py-12 text-center" id="skills">
             <div className="default-spacing flex flex-col gap-4">
-                <span className="text-4xl font-bold mb-2">Skills</span>
-                <span>Over the years I've worked with several differency stacks, and even more tools. Although some of them has been a few years, we never forget how to ride a bike, neither how to use a tool.</span>
+                <span data-rise className="text-4xl font-bold mb-2">Skills</span>
+                <span data-rise>Over the years I've worked with several differency stacks, and even more tools. Although some of them has been a few years, we never forget how to ride a bike, neither how to use a tool.</span>
                 <div className="my-5 grid grid-rows-1 grid-cols-3 gap-8">
-                    <div className="font-bold flex flex-col items-start gap-2">
+                    <div data-rise className="font-bold flex flex-col items-start gap-2">
                         <span className="text-2xl self-center">Frontend</span>
                         <span>Languages, Frameworks and Libraries</span>
                         <div className="flex flex-wrap gap-2">
@@ -38,7 +38,7 @@ function Skills() {
                             <img src="https://img.shields.io/badge/-jest-%23C21325?style=flat&logo=jest&logoColor=white" alt="jest" />
                         </div>
                     </div>
-                    <div className="font-bold flex flex-col items-start gap-2">
+                    <div data-rise className="font-bold flex flex-col items-start gap-2">
                         <span className="font-bold text-2xl self-center">Backend</span>
                         <span>Languages, Frameworks and Libraries</span>
                         <div className="flex flex-wrap gap-2">
@@ -61,7 +61,7 @@ function Skills() {
                             <img src="https://img.shields.io/badge/Sequelize-52B0E7?style=flat&logo=Sequelize&logoColor=white" alt="sequelize" />
                         </div>
                     </div>
-                    <div className="font-bold flex flex-col items-start gap-2">
+                    <div data-rise className="font-bold flex flex-col items-start gap-2">
                         <span className="text-2xl self-center">Others</span>
                         <span>Storage</span>
                         <div className="flex flex-wrap gap-2">

@@ -6,8 +6,10 @@ import About from './components/About/About';
 import Landing from './components/Landing/Landing';
 import Portfolio from './components/Portfolio/Portfolio';
 import Skills from './components/Skills/Skills';
+import { useReveal } from './lib/motion';
 
 function App() {
+  useReveal();
 
   return (
     <div className='bg-purple-200'>

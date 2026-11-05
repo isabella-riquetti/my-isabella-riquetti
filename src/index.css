@@ -28,6 +28,31 @@ button, .MuiButtonBase-root.MuiButton-root {
   @apply normal-case rounded-none shadow-none h-12 w-[180px] font-bold border border-solid border-black-950;
 }
 
+/* Scroll reveal, armed by useReveal (src/lib/motion.ts). */
+@media (prefers-reduced-motion: no-preference) {
+  [data-rise] {
+    transition:
+      opacity 700ms cubic-bezier(.2, .7, .2, 1),
+      transform 700ms cubic-bezier(.2, .7, .2, 1);
+    transition-delay: calc(var(--rise-step, 0) * 90ms);
+  }
+
+  [data-rise]:not([data-in]) {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  /* Uses `translate`, not `transform`, so it can run on an element that also rises. */
+  .drift {
+    animation: drift 6s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes drift {
+  from { translate: 0 0; }
+  to { translate: 0 -14px; }
+}
+
 button[data-rmiz-btn-zoom] {
   display: none !important;
 }

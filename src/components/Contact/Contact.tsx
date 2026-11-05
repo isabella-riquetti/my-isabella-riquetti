@@ -12,7 +12,7 @@ function Contact() {
         <div className='relative z-10 bg-purple-200' id="contact">
             <div className="absolute top-[140px] left-[-120px] z-20 w-48 h-48 bg-purple-600 rounded-full hidden lg:block"></div>
             <div className='default-spacing grid grid-cols-1 md:grid-cols-2 py-12 md:py-24 gap-8'>
-                <div className='flex flex-col gap-6'>
+                <div data-rise className='flex flex-col gap-6'>
                     <h1 className='text-2xl font-bold'>Get in Touch</h1>
                     <span>Have a question or a feedback in mind? I'd love to hear from you. Let's chat! I'm also available for mentorship.</span>
                     <div className='flex gap-2 mt-4'><EmailIcon /> <a target="_blank" href='mailto:isabella.riquetti@outlook.com'>isabella.riquetti@outlook.com</a></div>
@@ -21,7 +21,7 @@ function Contact() {
                         <div className='rounded-full bg-white p-2'><a target="_blank" href='https://instagram.com/riquettinha' className='flex items-center justify-center'><InstagramIcon /></a></div>
                     </div>
                 </div>
-                <div>
+                <div data-rise>
                     <form onSubmit={handleSubmit} className='w-full flex flex-col gap-5'>
                         <input
                             placeholder='First Name*'
